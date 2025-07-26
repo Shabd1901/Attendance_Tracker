@@ -1,0 +1,27 @@
+body {
+    background: #fff;
+    color: #555;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 2rem;
+}
+
+.present-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.absent-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}

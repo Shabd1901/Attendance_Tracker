@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if complete %}
+<h2>Attendance Completed!</h2>
+<a href="{{ url_for('main.summary') }}">View Summary</a>
+{% else %}
+<h2>{{ student.roll_number }} - {{ student.name }}</h2>
+<form method="POST">
+    <button name="status" value="Present" class="present-btn">Present</button>
+    <button name="status" value="Absent" class="absent-btn">Absent</button>
+    {% if session.current > 0 %}
+    <button name="prev" value="1" class="prev-btn">Previous</button>
+    {% endif %}
+</form>
+{% endif %}
+{% endblock %}

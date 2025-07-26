@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Welcome to Attendance Tracker</h2>
+<p>Total Students: {{ students|length }}</p>
+<a href="{{ url_for('main.start_attendance') }}">
+    <button class="start-btn">Start Attendance</button>
+</a>
+{% endblock %}
